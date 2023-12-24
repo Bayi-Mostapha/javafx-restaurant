@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="736.0" stylesheets="@../styles/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+   <children>
+      <Text layoutX="100.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="i-title" text="Menu Items" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button layoutX="597.0" layoutY="98.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="137.0" styleClass="manage-cats-items" text="Manage Categories" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+         <graphic>
+            <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Filter.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="100.0" layoutY="86.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="475.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="50.0">
+         <content>
+            <TilePane fx:id="tilePane1" hgap="20.0" prefHeight="200.0" prefWidth="479.0" vgap="20.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="173.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="616.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0">
+         <content>
+            <TilePane fx:id="tilePane" hgap="20.0" prefHeight="200.0" prefWidth="614.0" vgap="20.0">
+               <children>
+                  <VBox prefHeight="180.0" prefWidth="125.0" styleClass="add-product">
+                     <children>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add new dish" textAlignment="CENTER" />
+                     </children>
+                  </VBox>
+               </children>
+            </TilePane>
+         </content>
+      </ScrollPane>
+      <HBox layoutX="335.0" layoutY="387.0" spacing="15.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="20.0">
+         <children>
+            <Button mnemonicParsing="false" styleClass="discard-changes-items" text="Discard Changes" />
+            <Button mnemonicParsing="false" styleClass="save-changes-items" text="Save Changes" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
