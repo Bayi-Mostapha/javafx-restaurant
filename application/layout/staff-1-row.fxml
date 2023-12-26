@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="26.0" prefWidth="480.0" styleClass="staff-title-row" stylesheets="@../styles/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox minHeight="19.0" minWidth="91.0" prefHeight="19.0" prefWidth="94.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Name" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="57.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Role" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="99.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label prefHeight="17.0" prefWidth="90.0" text="Phone Number" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="101.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label prefHeight="17.0" prefWidth="63.0" text="Hired Date" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="127.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Options" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

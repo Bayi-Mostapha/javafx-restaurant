@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="150.0" spacing="5.0" style="-fx-background-color: white;" stylesheets="@../styles/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.MenuItemC">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-item-img" VBox.vgrow="ALWAYS">
+         <image>
+            <Image url="@../../../../../Downloads/bb.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </ImageView>
+      <Label fx:id="itemName" styleClass="title" text="Label">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Label>
+      <Label fx:id="itemPrice" styleClass="price" text="0" />
+      <HBox fx:id="addBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="circle-btn">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/w-plus.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="item" />
+      <String fx:value="menu-item" />
+   </styleClass>
+</VBox>

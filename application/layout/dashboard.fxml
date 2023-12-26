@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="734.0" stylesheets="@../styles/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.DashboardC">
+   <children>
+      <Text layoutX="100.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="i-title" text="Dashboard" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <HBox layoutX="20.0" layoutY="53.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="656.0" spacing="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="99.0" styleClass="admin-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text layoutX="27.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Revenue" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label fx:id="trevenue" layoutX="52.0" layoutY="35.0" text="0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="25.0" />
+                  <VBox layoutX="16.0" layoutY="21.0" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Group.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="99.0" styleClass="admin-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Orders" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label fx:id="norders" layoutX="62.0" layoutY="45.0" text="0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="25.0" />
+                  <VBox layoutX="15.0" layoutY="26.0" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Group%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="99.0" styleClass="admin-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text layoutX="30.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Menu" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label fx:id="nmenu" layoutX="62.0" layoutY="45.0" text="0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="25.0" />
+                  <VBox layoutX="17.0" layoutY="42.0" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/tajin.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="99.0" styleClass="admin-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text layoutX="52.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Staff" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Label fx:id="nstaff" layoutX="62.0" layoutY="45.0" text="0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="25.0" />
+                  <VBox layoutX="22.0" layoutY="26.0" prefHeight="35.0" prefWidth="35.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Vector%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="143.0" prefHeight="224.0" prefWidth="600.0" spacing="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="280.0" styleClass="chart" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="i-title2" text="Total Revenue" />
+                  <LineChart>
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="280.0" styleClass="chart" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="i-title2" text="Order Chart" />
+                  <BarChart>
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Text layoutX="17.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="i-title" text="Most popular items" AnchorPane.leftAnchor="20.0" />
+      <HBox fx:id="itemContainer" layoutX="20.0" layoutY="442.0" prefHeight="107.0" prefWidth="610.0" spacing="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <padding>
+            <Insets right="35.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

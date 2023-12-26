@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane prefHeight="230.0" prefWidth="321.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.UpdateStaffPU">
+   <content>
+      <VBox maxHeight="1.7976931348623157E308" prefHeight="185.0" prefWidth="407.0" style="-fx-background-color: white;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="first name" />
+            <TextField fx:id="fnametxt" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="last name" />
+            <TextField fx:id="lnametxt" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="role" />
+            <TextField fx:id="roletxt" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="phone number" />
+            <TextField fx:id="pnumbertxt" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="hired date" />
+            <DatePicker fx:id="hdatetxt" />
+         </children>
+      </VBox>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="CANCEL" />
+      <ButtonType fx:constant="OK" />
+   </buttonTypes>
+</DialogPane>
