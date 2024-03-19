@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="containerItem" maxHeight="423.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="270.0" style="-fx-background-color: white;" styleClass="item_kitchen" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.KOrderController">
+   <top>
+      <HBox prefHeight="43.0" prefWidth="270.0" style="-fx-background-color: #FFAB4B;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="99.0" />
+            <Pane prefHeight="100.0" prefWidth="99.0">
+               <children>
+                  <Label fx:id="orderid" layoutX="-2.0" layoutY="9.0" text="Order #1234" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="99.0" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrol1" hbarPolicy="NEVER" maxHeight="200.0" minHeight="200.0" prefHeight="200.0" prefWidth="270.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane maxHeight="200.0" minHeight="200.0" prefHeight="200.0" prefWidth="268.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox id="vboxitem" fx:id="vboxitem" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" prefHeight="200.0" prefWidth="268.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets top="7.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <VBox prefHeight="171.0" prefWidth="270.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="45.0" prefWidth="270.0" style="-fx-background-color: white;">
+               <children>
+                  <Text fill="#0d0d0d" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes:">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Pane>
+            <ScrollPane maxWidth="270.0" prefHeight="94.0" prefWidth="270.0" style="-fx-background-color: transparent;" vbarPolicy="ALWAYS">
+               <content>
+                  <HBox maxWidth="268.0" minHeight="86.0" prefWidth="253.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label fx:id="note" style="-fx-wrap-text: true;" styleClass="note_label" stylesheets="@../styles/kitchen.css" text="BURGER" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <Pane prefHeight="49.0" prefWidth="270.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane fx:id="readyBtn" layoutX="67.0" layoutY="1.0" prefHeight="45.0" prefWidth="136.0">
+                     <children>
+                        <Text fill="#ffab4b" layoutX="37.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READY">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

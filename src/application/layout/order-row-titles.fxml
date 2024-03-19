@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="26.0" prefWidth="480.0" styleClass="orders-title-row" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox minHeight="19.0" minWidth="50.0" prefHeight="26.0" prefWidth="50.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Order id" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="113.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Order type" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="88.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label prefHeight="17.0" prefWidth="90.0" text="Price" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="95.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label prefHeight="17.0" prefWidth="63.0" text="Date" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="77.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Status" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

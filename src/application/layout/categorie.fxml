@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="categorie" stylesheets="@../styles/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.CategorieC">
+   <children>
+      <ImageView fx:id="picture" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="catName" text="Label" />
+   </children>
+</VBox>
